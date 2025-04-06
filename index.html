@@ -1,0 +1,106 @@
+<!-- Main Landing Page -->
+<div id="mainPage" class="landing">
+  <div class="hero">
+    <h1 class="title">🎓 Student Management System</h1>
+    <p class="tagline">Welcome to your academic portal. Manage your journey with ease.</p>
+    <div class="button-grid">
+      <div class="card" data-section="login"><i class="fas fa-sign-in-alt"></i> Login</div>
+      <div class="card" data-section="signup"><i class="fas fa-user-plus"></i> Sign Up</div>
+      <div class="card" data-section="fees"><i class="fas fa-rupee-sign"></i> Fee Section</div>
+      <div class="card" data-section="attendance"><i class="fas fa-calendar-check"></i> Attendance</div>
+      <div class="card" data-section="timetable"><i class="fas fa-table"></i> Timetable</div>
+      <div class="card" data-section="syllabus"><i class="fas fa-book-open"></i> Syllabus</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Login Page -->
+<div class="interface" id="loginPage">
+  <h2>Student Login</h2>
+  <form>
+    <input type="text" placeholder="Enrollment No." required><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+  <p>Don't have an account? Click on Sign Up.</p>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<!-- Sign Up Page -->
+<div class="interface" id="signupPage">
+  <h2>Create New Account</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <input type="text" placeholder="Enrollment No." required><br>
+    <input type="password" placeholder="Create Password" required><br>
+    <button type="submit">Register</button>
+  </form>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<!-- Fee Section -->
+<div class="interface" id="feesPage">
+  <h2>Fee Details</h2>
+  <table>
+    <tr><th>Semester</th><th>Amount</th><th>Status</th></tr>
+    <tr><td>Semester 1</td><td>₹60,000</td><td>Paid</td></tr>
+    <tr><td>Semester 2</td><td>₹60,000</td><td>Paid</td></tr>
+    <tr><td>Semester 3</td><td>₹62,000</td><td>Pending</td></tr>
+  </table>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<!-- Attendance Section -->
+<div class="interface" id="attendancePage">
+  <h2>Attendance Record</h2>
+  <table>
+    <tr><th>Subject</th><th>Attended</th><th>Total</th><th>%</th></tr>
+    <tr><td>Data Structures</td><td>38</td><td>42</td><td>90%</td></tr>
+    <tr><td>Operating Systems</td><td>35</td><td>42</td><td>83%</td></tr>
+    <tr><td>Database Systems</td><td>36</td><td>42</td><td>86%</td></tr>
+  </table>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<!-- Timetable Section -->
+<div class="interface" id="timetablePage">
+  <h2>Weekly Timetable</h2>
+  <table>
+    <tr><th>Day</th><th>9-10 AM</th><th>10-11 AM</th><th>11-12 PM</th></tr>
+    <tr><td>Mon</td><td>DSA</td><td>OS</td><td>Break</td></tr>
+    <tr><td>Tue</td><td>DBMS</td><td>DSA</td><td>CN</td></tr>
+    <tr><td>Wed</td><td>CN</td><td>OS</td><td>Break</td></tr>
+    <tr><td>Thu</td><td>DBMS</td><td>DSA</td><td>CN</td></tr>
+    <tr><td>Fri</td><td>OS</td><td>Break</td><td>DSA</td></tr>
+  </table>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<!-- Syllabus Section -->
+<div class="interface" id="syllabusPage">
+  <h2>Syllabus</h2>
+  <ul>
+    <li><strong>DSA:</strong> Arrays, Linked Lists, Trees, Graphs, Sorting</li>
+    <li><strong>OS:</strong> Processes, Scheduling, Memory Management</li>
+    <li><strong>DBMS:</strong> SQL, Normalization, Transactions</li>
+    <li><strong>CN:</strong> TCP/IP, OSI Model, Routing</li>
+  </ul>
+  <button onclick="goBack()">Back</button>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">Hello, CodePen!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
